@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .rectangle-container {
+            display: flex; 
+            justify-content: space-between; 
+            width: 100%;
+            margin-bottom: 10px; 
+        }
+
+        .rectangle {
+            width: 48%; 
+            height: 20px;
+            background-color: rgb(61, 166, 207);
+            color: #fff;
+            line-height: 20px;
+            border-radius: 5px;
+        }
+        .rectangle.blue {
+        width: 150px; 
+        height: 20px; 
+        background-color: rgb(33, 33, 149);
+        position: relative;
+        padding-left: 30px;
+    }
+    .rectangle.babyblue{
+        width: 120px; 
+        height: 20px; 
+        background-color: rgb(52, 194, 233);
+        
+    }
+        .rectangle img {
+            width: 20px;
+            margin-right: 10px;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-left: 60px;
+            margin: 10px 0;
+            border: 1px solid #dddfe2;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            background-color: rgb(33, 33, 149);
+            color: #fff;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: rgb(98, 178, 207);
+        }
+
+        .signup {
+            margin-top: 20px;
+            font-size: 14px;
+            color: rgb(52, 194, 233);
+        }
+
+        .blue-text {
+        color:rgb(52, 194, 233);
+    }
+        .circle-container {
+        margin-top: 10px;
+    }
+
+    .circle {
+        width: 25px;
+        height: 25px; 
+        border-radius: 50%; 
+        background-color: rgb(190, 188, 190); 
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        color: rgb(0, 0, 0); 
+        font-size: 14px; 
+    }
+
+    </style>
+</head>
+<body>
+    <div class="container" >
+        <div class="rectangle-container" >
+            <div class="rectangle" > 
+                <img src="https://tse4.explicit.bing.net/th?id=OIP.aYVbqEFb2M-SWsBh_LafIQHaHa&pid=Api&P=0&h=220" alt="facebook logo" >
+                Login to Facebook 
+            </div>
+            <div class="rectangle"> 
+                <img src="https://tse3.mm.bing.net/th?id=OIP.-2yiSRFxDGzINV5OGldPwgHaFH&pid=Api&P=0&h=220" alt="Twitter Logo">
+                Login to Twitter
+            </div>
+        </div>
+        <div class ="circle-container">
+            <div class="circle"> Or</div>
+        </div>
+        <form>
+            <input type="text" placeholder="Username">
+            <input type="password" placeholder="•••••••••••••">
+            <input type="submit" value="Log In">
+        </form>
+        <p>Not a member ? <span class="blue-text">Sign up now! </span> </p> 
+       
+    </div>
+</body>
+</html>
